@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    div(
+        id='root'
+    )
+        span(
+            id='title'
+        ) Todo List
+        div(
+            id='todoForm'
+        )
+            input(
+                type='text'
+                placeholder='todo'
+                id='todo'
+            )
+            button(
+                onclick= 'addTodo()'
+            ) Add
+        div(
+            id='todoList'
+        )
+            each todo in todos
+                div(
+                    class='todo-item'
+                )
+                    input(
+                        type='checkbox'
+                        onclick= 'complete(' + todo.id + ', ' + !todo.completed + ')'
+                        checked=todo.completed === 1
+                    )
+                    span(
+                        class=(todo.completed ? 'todo-text completed' : 'todo-text')
+                    )= todo.description
+                    button(
+                        onclick='deleteTodo(' + todo.id + ')'
+                    ) Delete
+                    button(
+                        onclick='editTodo(' + todo.id + ', "' + todo.description + '")'
+                    ) Edit
+
