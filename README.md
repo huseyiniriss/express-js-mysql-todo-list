@@ -14,5 +14,5 @@ npm start
 ## Screenshots
 
 <p>
-  <img src="https://raw.githubusercontent.com/huseyiniriss/express-js-mysql-todo-list/master/screenshot/1.PNG">
+  <img src="https://raw.githubusercontent.com/huseyiniriss/express-js-mysql-todo-list/main/screenshot/1.png">
 </p>
