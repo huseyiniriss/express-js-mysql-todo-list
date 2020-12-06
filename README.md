@@ -1,4 +1,4 @@
-# React JS Hook Todo list
+# Express JS Todo list
 how to use mysql with express js and pug template
 
 mysql (select, insert, update, delete)
